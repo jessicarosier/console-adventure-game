@@ -24,13 +24,10 @@ public class Input {
     }
 
     public boolean yesNo() {
-        scanner.nextLine();
-        String newBool = scanner.nextLine();
-        if (newBool.equalsIgnoreCase("y") || newBool.equalsIgnoreCase("yes")) {
-
+        int answer = scanner.nextInt();
+        if (answer == 1) {
             return true;
         } else {
-
             return false;
         }
     }
@@ -38,8 +35,8 @@ public class Input {
     public boolean yesNo(String prompt) {
         System.out.println(prompt);
         scanner.nextLine();
-        String newBool = scanner.nextLine();
-        if (newBool.equalsIgnoreCase("y") || newBool.equalsIgnoreCase("yes")) {
+        int answer = scanner.nextInt();
+        if (answer == 1) {
             return true;
         } else {
             return false;
